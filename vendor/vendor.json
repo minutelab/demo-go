@@ -1,0 +1,49 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "hmjY4MUlyj/kx/zw+R1iSu3FTlo=",
+			"path": "github.com/jmoiron/sqlx",
+			"revision": "cac998c4f0959c19c638c523e374fa8e4e0bcfe3",
+			"revisionTime": "2016-12-09T02:45:31Z"
+		},
+		{
+			"checksumSHA1": "NrhkMPKlj0N6LaD2JMb2KKnR03w=",
+			"path": "github.com/jmoiron/sqlx/reflectx",
+			"revision": "cac998c4f0959c19c638c523e374fa8e4e0bcfe3",
+			"revisionTime": "2016-12-09T02:45:31Z"
+		},
+		{
+			"checksumSHA1": "tvimR1R9mxvCDSUxlnKgIXjJBus=",
+			"path": "github.com/lib/pq",
+			"revision": "67c3f2a8884c9b1aac5503c8d42ae4f73a93511c",
+			"revisionTime": "2017-01-17T20:56:33Z"
+		},
+		{
+			"checksumSHA1": "xppHi82MLqVx1eyQmbhTesAEjx8=",
+			"path": "github.com/lib/pq/oid",
+			"revision": "67c3f2a8884c9b1aac5503c8d42ae4f73a93511c",
+			"revisionTime": "2017-01-17T20:56:33Z"
+		},
+		{
+			"checksumSHA1": "1k0n+C8zQmrpgdEIe1UGrgKpihA=",
+			"path": "github.com/minutelab/go-mlabtest",
+			"revision": "1911ab94a884afdef766f323c6ae4c18590fc888",
+			"revisionTime": "2017-01-19T12:29:43Z"
+		},
+		{
+			"checksumSHA1": "uAjBPv7hHOMAx6k5RaTQ3/79Bsk=",
+			"path": "github.com/minutelab/go-mlabtest/pgtest",
+			"revision": "1911ab94a884afdef766f323c6ae4c18590fc888",
+			"revisionTime": "2017-01-19T12:29:43Z"
+		},
+		{
+			"checksumSHA1": "A9uvPZ3CULPOhueuC7g+4jY2dYc=",
+			"path": "github.com/minutelab/go-mlabtest/sqitchdb",
+			"revision": "1911ab94a884afdef766f323c6ae4c18590fc888",
+			"revisionTime": "2017-01-19T12:29:43Z"
+		}
+	],
+	"rootPath": "github.com/minutelab/demo-go"
+}

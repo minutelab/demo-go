@@ -1,0 +1,34 @@
+#!/usr/bin/env mlab
+
+FLAG ver=9.6 "Posgres version"
+FLAG volume=demodb "volume to hold the database files"
+FLAG -bool detach "detach once the database is ready"
+FLAG -bool bash "start bash"
+FLAG port=5432  "Exposed port"
+FLAG ip=default "IP to be used for server"
+
+FROM postgres:$ver
+
+RUN apt-get update && apt-get install -y vim
+
+NETCON $ip
+
+EXPOSE 5432 $port
+
+EXPORT PGDATA=/mnt/db
+SHARE $PGDATA VOLUME:$volume
+
+START << END
+  echo "starting"
+  if [ "$detach" = true ]
+  then
+    mlab detach -p :5432 -t 30s &
+  fi
+  if [ "$bash" = true ]
+  then
+    bash
+  else
+    echo running postgres - Address `mlab inspect  -f '\033[31m{{(index .config.Network.interfaces 0).address}}\033[0m')`
+    /docker-entrypoint.sh postgres
+  fi
+END
